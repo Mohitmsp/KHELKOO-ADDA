@@ -6,13 +6,14 @@
     <title>Khelkoodadda.com</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+
         a:link{
             text-decoration: none;
         }
         
-        h1 {color: gold;}
+        h1 {color: rgb(255, 0, 128);}
         h1{
-            font-family: fantasy;
+            font-family:Georgia, 'Times New Roman', Times, serif ;
         }
         p {color: white;}
         p{
@@ -21,6 +22,28 @@
         p{
             font-size: large;
         }
+        
+        /* Style for header */
+       header {
+         background-color: #333;
+         color: white;
+         padding: 20px;
+         position: relative;
+          }
+
+       /* Style for header content */
+          .header-content {
+           display: inline-block;
+        }
+
+       /* Style for login icon */
+        .login-icon {
+         position: absolute;
+         top: 20px;
+          right: 20px;
+         }
+
+
         body{
             background-image: url(Cricket1.avif);
             background-attachment: fixed;
@@ -28,13 +51,13 @@
             background-repeat: no-repeat;
         }
         h3{
-            color: deeppink;
+            color:red;
         }
         body {margin:0;}
 
 .icon-bar {
   width: 100%;
-  background-color: #555;
+  background-color:paleturquoise;
   overflow: auto;
 }
         .icon-bar a {
@@ -51,35 +74,61 @@
 }
 
 .active {
-  background-color: #0412aa;
+  background-color: #2907ea;
 }
+
+#ul_top_hypers {
+    display: flex;
+    justify-content:space-around;
+    list-style-type:none;
+}
+
+#ul_top_hypers li {
+    color:rgb(246, 9, 171); 
+    background-color:aqua; 
+    border: 3px solid blue;
+    padding: 10px; /* Padding around the content */
+    margin: 5px; /* Margin between items */
+}
+
     </style>
 </head>
 <body>
     <h1 style="text-align: center;" title="Welcome">KHEL-KOOD ADDA</h1>
     <p style="text-align: center;">You can check daily live updates of sports</p>
+
+  <header>
+      <div class="header-content">
+        
+      </div>
+    <!--add login page -->
+      <a href="login.html" class="login-icon"><img src="loginicon.jpg" width="25px" height="25px" alt="Login"></a>
+    </header>
+  </div>
      
     <div class="icon-bar">
-        <a class="active" href="#"><i class="fa fa-home"></i></a> 
-        <a href="#"><i class="fa fa-search"></i></a> 
-        <a href="#"><i class="fa fa-envelope"></i></a> 
-        <a href="#"><i class="fa fa-globe"></i></a>
-        <a href="#"><i class="fa fa-trash"></i></a> 
+        <a class="active" href="home.html"><i class="fa fa-home" style="color:gold"></i></a> 
+        <a href="#"><i class="fa fa-search" style="color:gold"></i></a> 
+        <a href="#"><i class="fa fa-envelope" style="color:gold"></i></a> 
+        <a href="#"><i class="fa fa-globe" style="color:gold"></i></a>
+        <a href="#"><i class="fa fa-trash" style="color: gold"></i></a> 
       </div>
 
-    <h2 style="color: crimson;" title="Click for more details in your fav sport">Games:</h2>
-    <ul> 
-       <a href="https://www.cricbuzz.com/"><li style="color: white;">Cricket</li></a>
-        <a href="https://www.espn.in/football/scoreboard"><li style="color: white;">Football</li></a>
-        <a href="https://www.livescore.in/volleyball/"><li style="color: white;">Volleyball</li></a>
-        <a href="https://bwfworldtour.bwfbadminton.com/live/"><li style="color: white;">Batminton</li></a>
-    </ul>
+    <h2 style="color:red" title="Click for more details in your fav sport">Games:</h2>
 
-   <center>
-     <h3 title="Register yourself";>Login Here</h3>
+  <div id="div_top_hypers">
+    <ul id="ul_top_hypers">
+        <li style="font-size: 20px;">&#8227; <a href="https://www.cricbuzz.com/" class="a_top_hypers" style="color: rgb(237, 7, 221);"> CRICKET</a></li>
+        <li style="font-size: 20px;">&#8227; <a href="https://www.espn.in/football/scoreboard" class="a_top_hypers" style="color: rgb(237, 7, 221);">FUTBALL</a></li>
+        <li style="font-size: 20px;">&#8227; <a href="https://www.livescore.in/volleyball/" class="a_top_hypers" style="color: rgb(237, 7, 221);">VOLLEYBALL</a></li>
+        <li style="font-size: 20px;">&#8227; <a href="https://bwfworldtour.bwfbadminton.com/live/" class="a_top_hypers" style="color: rgb(237, 7, 221);">BATMINTON</a></li>
+    </ul>
+</div>
+  <!-- <center>
+     <h3 title="Register yourself";>Login / Sign Up</h3>
     <form action="" method="get" class="form-example">
         <div class="form-example">
-          <label for="name" style="color: white;">Enter your name: </label>
+          <label for="name" style="color: rgb(255, 255, 255);">Enter your name: </label>
           <input type="text" name="name" id="name" required />
         </div>
         <div class="form-example">
@@ -94,11 +143,12 @@
              <label for="Favorite sport" style="color: white;">Enter Favt Sport :</label>
              <input type="text">
         </div>
+        <br>
         <div class="form-example">
-            <input type="submit" value="Subscribe!" />
+            <input type="submit" value="SUBSCRIBE" />
           </div>
       </form>
-    </center>
+    </center>  -->
 
    
 </body>
