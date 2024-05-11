@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khelkoodadda.com</title>
+    <link rel="icon" type="image/x-icon" href="favicon-ms.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
 
@@ -11,23 +12,18 @@
             text-decoration: none;
         }
         
-        h1 {color: rgb(255, 0, 128);}
+       
         h1{
             font-family:Georgia, 'Times New Roman', Times, serif ;
         }
-        p {color: white;}
-        p{
-            border: 4px solid blue;
-        }
-        p{
-            font-size: large;
-        }
+       
         
         /* Style for header */
        header {
-         background-color: #333;
-         color: white;
-         padding: 20px;
+         background-color:rgb(22, 160, 214);
+         color:saddlebrown;
+         text-align: center;
+         padding:2px;
          position: relative;
           }
 
@@ -39,28 +35,16 @@
        /* Style for login icon */
         .login-icon {
          position: absolute;
-         top: 20px;
-          right: 20px;
-         }
+         top: 140px;
+         right: 10px;
+         } 
 
-
-        body{
-            background-image: url(Cricket1.avif);
-            background-attachment: fixed;
-             background-size: cover;
-            background-repeat: no-repeat;
-        }
-        h3{
-            color:red;
-        }
-        body {margin:0;}
-
-.icon-bar {
+   .icon-bar {
   width: 100%;
   background-color:paleturquoise;
   overflow: auto;
-}
-        .icon-bar a {
+  }
+  .icon-bar a {
   float: left;
   width: 20%;
   text-align: center;
@@ -91,65 +75,524 @@
     margin: 5px; /* Margin between items */
 }
 
+.nav {
+  background-color:#333333; 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color:white;
+}
+
+.nav li {
+  display:inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+/* checking latest*/
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: red;
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* new  progress */
+.col-one .quicklinks_list__link.external {
+    padding-right: 30px;
+}
+.col-one .quicklinks_list__link{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    position: relative;
+}
+a {
+    color: inherit;
+    outline: 0 !important;
+}
+a {
+    background: transparent;
+    color: inherit;
+    text-decoration: none;
+}
+
+div, span, h2, h3, h4, h5, h6, p, a, dl, dt, dd, ol, ul, li {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.col-one .quicklinks_list__item{
+    font-weight: 400;
+    transition: .25s background ease-in-out;
+    position: relative;
+    padding: 0px;
+}
+user agent stylesheet
+li {
+    text-align: -webkit-match-parent;
+}
+ol, ul {
+    list-style: none;
+}
+user agent stylesheet
+ul {
+    list-style-type: disc;
+}
+.col-one .quicklinks {
+    width: 40%;
+    max-width:200px;
+    font-size: 12px;
+}
+
+/* check */
+
+/* Create two columns/boxes that floats next to each other */
+.col-one {
+  width: 60%;
+}
+
+/* Style the list inside the menu  */
+.col-one ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #f1f1f1;
+   height:auto/* only for demonstration, should be removed */
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  .col-one, article{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color:white;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#main-container, #custom-nav {
+    visibility: visible !important;
+}
+#main-container, #custom-nav {
+    visibility: hidden !important;
+}
+body {
+    font: 16px -apple-system, BlinkMacSystemFont, "Roboto", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-overflow-style: scrollbar;
+    background: #edeef0;
+  
+}
+body {
+    line-height: 1;
+    margin: 0;
+} 
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+} 
+.col-one .quicklinks_list__link.external:after {
+    bottom: 0;
+    height: 10px;
+    margin: auto;
+    position: absolute;
+    right: 12px;
+    top: 0;
+}
+a.external:after {
+    color: #6c6d6f;
+    display: inline-block;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 2px;
+    vertical-align: middle;
+    content: "\E085";
+}
+
+footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333333;
+   color: white;
+}
+
+.horizontal-list {
+  list-style-type: none; /* Remove default list bullets */
+  padding: 30px; 
+  margin: 10px;
+}
+
+.horizontal-list li {
+  display: inline-block; /* Display list items horizontally */
+  margin-right: 40px; /* Add some space between list items */
+}
+
     </style>
 </head>
+
 <body>
-    <h1 style="text-align: center;" title="Welcome">KHEL-KOOD ADDA</h1>
-    <p style="text-align: center;">You can check daily live updates of sports</p>
-
   <header>
-      <div class="header-content">
-        
-      </div>
-    <!--add login page -->
-      <a href="login.html" class="login-icon"><img src="loginicon.jpg" width="25px" height="25px" alt="Login"></a>
-    </header>
+    <div class="logo">
+      <img src="Khelkood- Adda logo.jpg" alt="Your Logo Alt Text" width="60px" height="50px">
   </div>
+    <h1>KHEL-KOOD ADDA</h1>
+  </header>
+
+    <span>
+      <a href="login.html" class="login-icon"><img src="icons8-login-65.png" width="39px" height="39px" alt="Login"></a>
+    </span>
      
-    <div class="icon-bar">
-        <a class="active" href="home.html"><i class="fa fa-home" style="color:gold"></i></a> 
-        <a href="#"><i class="fa fa-search" style="color:gold"></i></a> 
-        <a href="#"><i class="fa fa-envelope" style="color:gold"></i></a> 
-        <a href="#"><i class="fa fa-globe" style="color:gold"></i></a>
-        <a href="#"><i class="fa fa-trash" style="color: gold"></i></a> 
-      </div>
-
-    <h2 style="color:red" title="Click for more details in your fav sport">Games:</h2>
-
-  <div id="div_top_hypers">
-    <ul id="ul_top_hypers">
-        <li style="font-size: 20px;">&#8227; <a href="https://www.cricbuzz.com/" class="a_top_hypers" style="color: rgb(237, 7, 221);"> CRICKET</a></li>
-        <li style="font-size: 20px;">&#8227; <a href="https://www.espn.in/football/scoreboard" class="a_top_hypers" style="color: rgb(237, 7, 221);">FUTBALL</a></li>
-        <li style="font-size: 20px;">&#8227; <a href="https://www.livescore.in/volleyball/" class="a_top_hypers" style="color: rgb(237, 7, 221);">VOLLEYBALL</a></li>
-        <li style="font-size: 20px;">&#8227; <a href="https://bwfworldtour.bwfbadminton.com/live/" class="a_top_hypers" style="color: rgb(237, 7, 221);">BATMINTON</a></li>
-    </ul>
-</div>
-  <!-- <center>
-     <h3 title="Register yourself";>Login / Sign Up</h3>
-    <form action="" method="get" class="form-example">
-        <div class="form-example">
-          <label for="name" style="color: rgb(255, 255, 255);">Enter your name: </label>
-          <input type="text" name="name" id="name" required />
-        </div>
-        <div class="form-example">
-          <label for="email" style="color: white;">Enter your email: </label>
-          <input type="email" name="email" id="email" required />
-        </div>
-        <div class="form-example">
-            <label for="Age" style="color: white;">Enter your agesz:</label>
-            <input type="number">
-        </div>
-        <div class="form-example">
-             <label for="Favorite sport" style="color: white;">Enter Favt Sport :</label>
-             <input type="text">
-        </div>
-        <br>
-        <div class="form-example">
-            <input type="submit" value="SUBSCRIBE" />
+  
+    <ul class="nav"> 
+      <li><a href="https://www.cricbuzz.com/">Cricket</a></li>
+      <li><a href="https://www.fih.hockey/">Hockey</a></li>
+      <li><a href="https://www.fifa.com/fifaplus/en">Football</a></li>
+      <li><a href="https://bwfbadminton.com/">Badminton</a></li>
+      <li><a href="https://en.volleyballworld.com/">Volleyball</a></li>
+      <li><a href="https://olympics.com/en/">Olympics</a></li>
+      <li><a href="https://www.iplt20.com/">IPL</a></li>
+      <li><a href="https://www.the-aiff.com/">ISL</a></li>
+      <li class="Dropdown">
+        <button class="dropbtn">More<i class="fa fa-caret-down"></i> </button>
+        <div class="dropdown-content">
+          <div class="header">
+            <h2>Mega Menu</h2>
+          </div>   
+          <div class="row">
+            <div class="column">
+              <h3>Category 1</h3>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <div class="column">
+              <h3>Category 2</h3>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+            <div class="column">
+              <h3>Category 3</h3>
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
           </div>
-      </form>
-    </center>  -->
+        </div>
+      </li> 
 
+      <li class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </li>
+   </ul> 
+
+    
+    <section>
+    <nav class="col-one">
+   <article class="sub-module quicklinks">
+      <div class="quicklinks__container">
+         <header class="quicklinks__header">
+            <h2 class="quicklinks__heading" style="font-size: large;">Featured</h2>
+         </header>
+         <ul class="quicklinks_list">
+            <li class="quicklinks_list__item">
+               <a  name="&lpos=lrail:link:featured:1:ipl2024" href="https://www.espn.in/cricket/series/_/id/8048/season/2024/indian-premier-league" class="quicklinks_list__link ">
+                  <div class="quicklinks_list__icon"><img src="https://a.espncdn.com/combiner/i?img=%2Fi%2Fleaguelogos%2Fcricket%2F500%2F8048.png&w=60&h=60&scale=crop&cquality=80&location=origin" alt="" class="lazyloaded" width="26px" height="30px"></div>
+                  <div class="quicklinks_list__detail">
+                     <span class="quicklinks_list__name">IPL 2024</span>
+                  </div>
+               </a>
+            </li>
+            <li class="quicklinks_list__item">
+               <a  name="&lpos=lrail:link:featured:2:premierleague" href="http://www.espn.in/football/league/_/name/eng.1" class="quicklinks_list__link ">
+                  <div class="quicklinks_list__icon"><img src="https://a4.espncdn.com/combiner/i?img=%2Fi%2Fleaguelogos%2Fsoccer%2F500%2F23.png&w=60&h=60&scale=crop&cquality=80&location=origin" alt="" class="lazyloaded" width="26px" height="30px"></div>
+                  <div class="quicklinks_list__detail">
+                     <span class="quicklinks_list__name">English Premier League</span>
+                  </div>
+               </a>
+            </li>
+            <li class="quicklinks_list__item">
+               <a  name="&lpos=lrail:link:featured:3:laliga" href="http://www.espn.in/football/league/_/name/esp.1" class="quicklinks_list__link ">
+                  <div class="quicklinks_list__icon"><img src="https://a.espncdn.com/combiner/i?img=%2Fi%2Fleaguelogos%2Fsoccer%2F500%2F15.png&w=60&h=60&scale=crop&cquality=80&location=origin" alt="" class="lazyloaded" width="26px" height="30px"></div>
+                  <div class="quicklinks_list__detail">
+                     <span class="quicklinks_list__name">La Liga</span>
+                  </div>
+               </a>
+            </li>
+            <li class="quicklinks_list__item">
+               <a  name="&lpos=lrail:link:featured:4:championsleague" href="http://www.espn.in/football/league/_/name/uefa.champions" class="quicklinks_list__link ">
+                  <div class="quicklinks_list__icon"><img src="https://a3.espncdn.com/combiner/i?img=%2Fi%2Fleaguelogos%2Fsoccer%2F500%2F2.png&w=60&h=60&scale=crop&cquality=80&location=origin" alt="" class="lazyloaded" width="26px" height="30px"></div>
+                  <div class="quicklinks_list__detail">
+                     <span class="quicklinks_list__name">UEFA Champions League</span>
+                  </div>
+               </a>
+            </li>
+            <li class="quicklinks_list__item">
+               <a  name="&lpos=lrail:link:featured:5:europaleague" href="http://www.espn.in/football/league/_/name/uefa.europa" class="quicklinks_list__link ">
+                  <div class="quicklinks_list__icon"><img src="https://a2.espncdn.com/combiner/i?img=%2Fi%2Fleaguelogos%2Fsoccer%2F500%2F2310.png&w=60&h=60&scale=crop&cquality=80&location=origin" alt="" class="lazyloaded" width="26px" height="30px"></div>
+                  <div class="quicklinks_list__detail">
+                     <span class="quicklinks_list__name">Europa League</span>
+                  </div>
+               </a>
+            </li>
+            <li class="quicklinks_list__item">
+               <a  name="&lpos=lrail:link:featured:6:seriea" href="http://www.espn.in/football/league/_/name/ita.1" class="quicklinks_list__link ">
+                  <div class="quicklinks_list__icon"><img src="https://a1.espncdn.com/combiner/i?img=%252Fi%252Fleaguelogos%252Fsoccer%252F500%252F12.png&w=60&h=60&scale=crop&cquality=80&location=origin" alt="" class="lazyloaded" width="26px" height="30px"></div>
+                  <div class="quicklinks_list__detail">
+                     <span class="quicklinks_list__name">Serie A</span>
+                  </div>
+               </a>
+            </li>
+            <li class="quicklinks_list__item">
+               <a  name="&lpos=lrail:link:featured:7:bundesliga" href="http://www.espn.in/football/league/_/name/ger.1" class="quicklinks_list__link ">
+                  <div class="quicklinks_list__icon"><img src="https://a1.espncdn.com/combiner/i?img=%2Fi%2Fleaguelogos%2Fsoccer%2F500%2F10.png&w=60&h=60&scale=crop&cquality=80&location=origin" alt="" class="lazyloaded" width="26px" height="30px"></div>
+                  <div class="quicklinks_list__detail">
+                     <span class="quicklinks_list__name">Bundesliga</span>
+                  </div>
+               </a>
+            </li>
+            <li class="quicklinks_list__item">
+               <a href="https://www.espn.in/mma/fightcenter" class="quicklinks_list__link ">
+                  <div class="quicklinks_list__icon"><img src="https://a1.espncdn.com/combiner/i?img=%2Fredesign%2Fassets%2Fimg%2Ficons%2FESPN%2Dicon%2Dmma.png&w=80&h=80&scale=crop&cquality=40&location=origin" alt="" class="lazyloaded" width="26px" height="30px"></div>
+                  <div class="quicklinks_list__detail">
+                     <span class="quicklinks_list__name">Ultimate Fighting Championship</span>
+                  </div>
+               </a>
+            </li>
+            <li class="quicklinks_list__item">
+               <a  name="&lpos=lrail:link:featured:9:indiansuperleague" href="http://www.espn.in/football/league/_/name/ind.1" class="quicklinks_list__link ">
+                  <div class="quicklinks_list__icon"><img src="https://a.espncdn.com/combiner/i?img=%2Fi%2Fleaguelogos%2Fsoccer%2F500%2F2334.png&w=60&h=60&scale=crop&cquality=80&location=origin" alt="" class="lazyloaded" width="26px" height="30px"></div>
+                  <div class="quicklinks_list__detail">
+                     <span class="quicklinks_list__name">Indian Super League</span>
+                  </div>
+               </a>
+            </li>
+            <li class="quicklinks_list__item">
+               <a  name="&lpos=lrail:link:featured:10:ileague" href="https://www.espn.in/football/league/_/name/ind.2" class="quicklinks_list__link ">
+                  <div class="quicklinks_list__icon"><img src="https://a.espncdn.com/combiner/i?img=%2Fredesign%2Fassets%2Fimg%2Ficons%2FESPN%2Dicon%2Dsoccer.png&w=80&h=80&scale=crop&cquality=40&location=origin" alt="" class="lazyloaded" width="26px" height="30px"></div>
+                  <div class="quicklinks_list__detail">
+                     <span class="quicklinks_list__name">I-League</span>
+                  </div>
+               </a>
+            </li>
+            <li class="quicklinks_list__item">
+               <a  name="&lpos=lrail:link:featured:11:tokyoolympics" href="https://www.espn.in/olympics/" class="quicklinks_list__link ">
+                  <div class="quicklinks_list__icon"><img src="https://a1.espncdn.com/combiner/i?img=%2Fredesign%2Fassets%2Fimg%2Ficons%2FESPN%2Dicon%2Dolympics.png&w=80&h=80&scale=crop&cquality=40&location=origin" alt="" class="lazyloaded" width="26px" height="30px"></div>
+                  <div class="quicklinks_list__detail">
+                     <span class="quicklinks_list__name">Paris Olympics</span>
+                  </div>
+               </a>
+            </li>
+         </ul>
+      </div>
+   </article>
+  </nav>
    
+  <article>
+    <h1 style="text-align: center; font-size:40px;"><u>Articles</u></h1>
+    <div class="container">
+      <img src="Team-Indias-NEW-T20-WC-2024-Jersey.jpg" alt="T20 WC" style="width:100%;">
+      <div class="content">
+        <a href="https://www.icc-cricket.com/news/india-announce-squad-for-t20-world-cup"><h1>T20 WC Squad in new Jersy!</h1></a>
+        <p><span style="color:crimson">India squad:</span> Rohit Sharma (c), Hardik Pandya (vc), Yashasvi Jaiswal, Virat Kohli, Suryakumar Yadav, Rishabh Pant (wk), Sanju Samson (wk), Shivam Dube, Ravindra Jadeja, Axar Patel, Kuldeep Yadav, Yuzvendra Chahal, Arshdeep Singh, Jasprit Bumrah, Mohd. Siraj</p>
+         <br>
+         <p><span style="color: crimson;">Reserves:</span>Shubman Gill, Rinku Singh, Khaleel Ahmed and Avesh Khan</p>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+      <img src="neeraj and Kishore.jpeg" alt="Golden Boy" style="width:100%;">
+      <div class="content">
+      <a href="https://www.espn.in/espn/story/_/id/40113285/indian-sports-live-10-news-updates-scores-commentary-results-neeraj-chopra-wrestling-paris-olympics"><h1>Neeraj Chopra and Kishore Jena finished a historic 1-2 in the men's javelin throw event at the 19th Asian Games in Hangzhou, China</h1></a>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+      <img src="joseluRealMadrid.jpg" alt="Real Madrid" style="width:100%;">
+      <div class="content">
+     <a href="https://sportstar.thehindu.com/football/champions-league/real-madrid-vs-bayern-munich-live-score-uefa-champions-league-semifinal-second-leg-rma-vs-bay-updates-ucl-goals-highlights/article68154941.ece"><h1>Joselu’s Galactic moment for Madrid</h1></a>
+      <h1>Real Madrid and Dortmund are our Champions League finalists this season!</h1>
+      </div>
+    </div>
+    
+  </article>
+
+</section>
+
+<footer>
+    <ul  class="horizontal-list">
+  <li>
+    <a href="profile.html">
+      <p><img src="icons8-human-96.png" width="35px" height="32px"><span>Profile Card</span></p>
+   </a>
+  </li>
+
+  <li>
+    <a href="aboutMe.html">
+      <p><img src="icons8-about-me-100.png" width="40px" height="35px"><span>About Me</span></p>
+    </a> 
+  </li>
+
+  <li>
+    <a href="contact.html"> 
+      <p><img src="icons8-contact-96.png" width="40px" height="35px"><span>Contact</span></p>
+      </a>
+    </li>
+
+  <li>
+    <a href="#about">
+      <p><img src="icons8-facebook-64.png"  width="35px" height="35px"><span>Facebook</span></p>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://www.instagram.com/msp_poetry/?hl=en">
+      <p><img src="icons8-instagram-64.png"  width="35px" height="35px"><span>Instagram</span></p>
+  </a>
+</li>
+
+  <li>
+    <a href="https://www.linkedin.com/in/mohit-5b39bb234/">
+      <p><img src="icons8-linkedin-96.png" width="30px" height="30px"><span>Linkedln</span></p>
+    </a>
+  </li>
+</ul>
+</footer>
+
+
 </body>
 </html>
